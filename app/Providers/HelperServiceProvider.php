@@ -16,17 +16,17 @@ class HelperServiceProvider extends ServiceProvider
     public function register(): void
     {
         require_once app_path('Helpers/UserHelper.php');
+        require_once app_path('Helpers/ValidationHelper.php');
+        require_once app_path('Helpers/ResponseHelper.php');
         // Register helper classes
         $this->app->singleton('user.helper', function () {
             // ... kode helper class ...
         });
-
         $this->app->singleton('validation.helper', function () {
-            return new ValidationHelper();
+            // ... kode helper class ...
         });
-
         $this->app->singleton('response.helper', function () {
-            return new ResponseHelper();
+            // ... kode helper class ...
         });
     }
 
