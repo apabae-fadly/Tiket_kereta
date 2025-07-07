@@ -92,4 +92,10 @@ class UserHelper
         }
         return null;
     }
+}
+
+if (!function_exists('user_helper')) {
+    function user_helper() {
+        return app('user.helper');
+    }
 } 
