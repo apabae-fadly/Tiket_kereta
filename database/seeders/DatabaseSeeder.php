@@ -13,16 +13,6 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
-        // User::factory(10)->create();
-
-        User::factory()->create([
-            'name' => 'Test User',
-            'email' => 'test' . uniqid() . '@example.com',
-        ]);
-
-        $this->call(AdminSeeder::class);
-        // ...seeder lain jika ada
+        // kosongkan dulu untuk test
     }
-}
-
 }
