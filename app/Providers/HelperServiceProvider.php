@@ -18,7 +18,7 @@ class HelperServiceProvider extends ServiceProvider
         require_once app_path('Helpers/UserHelper.php');
         // Register helper classes
         $this->app->singleton('user.helper', function () {
-            return new UserHelper();
+            // ... kode helper class ...
         });
 
         $this->app->singleton('validation.helper', function () {
