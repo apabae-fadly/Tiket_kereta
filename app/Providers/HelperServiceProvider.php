@@ -73,13 +73,6 @@ class HelperServiceProvider extends ServiceProvider
             return "<?php endif; ?>";
         });
 
-        // Register helper functions
-        if (!function_exists('user_helper')) {
-            function user_helper() {
-                return app('user.helper');
-            }
-        }
-
         if (!function_exists('validation_helper')) {
             function validation_helper() {
                 return app('validation.helper');
