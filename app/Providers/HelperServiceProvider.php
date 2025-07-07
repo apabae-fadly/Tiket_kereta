@@ -74,10 +74,5 @@ class HelperServiceProvider extends ServiceProvider
         });
 
 
-        if (!function_exists('response_helper')) {
-            function response_helper() {
-                return app('response.helper');
-            }
-        }
     }
 } 
