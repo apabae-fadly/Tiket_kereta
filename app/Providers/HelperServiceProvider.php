@@ -34,6 +34,11 @@ class HelperServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
+        // Pastikan folder cache views ada
+        if (!is_dir(storage_path('framework/views'))) {
+            mkdir(storage_path('framework/views'), 0777, true);
+        }
+
         // Register Blade directives
         Blade::directive('IsAdmin', function () {
             return "<?php if(\\App\\Helpers\\UserHelper::IsAdmin()): ?>";
