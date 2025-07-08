@@ -6,7 +6,7 @@ use Closure;
 use App\Helpers\MiddlewareHelper;
 use Illuminate\Support\Facades\Auth;
 
-class TestSessionMiddleware
+class SessionCheckMiddleware
 {
     public function handle($request, Closure $next)
     {
@@ -26,4 +26,4 @@ class TestSessionMiddleware
 
         return $next($request);
     }
-}
+} 

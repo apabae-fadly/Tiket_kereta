@@ -56,6 +56,6 @@ class Kernel extends HttpKernel
         // ...middleware lain...
         'isAdmin' => \App\Http\Middleware\IsAdmin::class,
         'sess' => \App\Http\Middleware\CheckSessionExpiry::class,
-        'testroute' => \App\Http\Middleware\TestSessionMiddleware::class,
+        'session.check' => \App\Http\Middleware\SessionCheckMiddleware::class,
     ];
 }
