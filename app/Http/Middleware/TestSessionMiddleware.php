@@ -4,7 +4,7 @@ namespace App\Http\Middleware;
 
 use Closure;
 
-class TestSession
+class TestSessionMiddleware
 {
     public function handle($request, Closure $next)
     {
